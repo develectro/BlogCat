@@ -1,0 +1,33 @@
+.innerContainer {
+    /*border: solid green;*/
+    background-color: rgba(255, 255, 255, 100);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#fieldset {
+    transition: all .75s ease;
+    font-family: monospace;
+    font-size: 14px;
+    color: darkmagenta;
+    display: inline-flex;
+    border: 1px solid purple;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    padding: 3em;
+}
+
+#userName {
+    margin: 2em;
+    color: darkslateblue;
+}
+
+#passWord {
+    margin: 2em;
+    color: darkslateblue;
+}
