@@ -1,0 +1,146 @@
+body {
+    background-image: url(file:///C:/Users/INSPIRON/Desktop/shareYourPost/imagedoc-darknoise.png);
+    margin: 0px;
+    padding: 0px;
+}
+
+.editorContainer {
+    width: 400px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    /*to set the text box in the middle of the page*/
+}
+
+.editor {
+    text-align: center;
+}
+
+.ql-toolbar.ql-snow {
+    background-color: azure;
+    width: 400px;
+    height: 40px;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+.ql-editor {
+    width: 399px;
+    height: 250px;
+    background-color: azure;
+    line-height: 1.42;
+    outline: none;
+    overflow-y: auto;
+    padding: 12px 15px;
+    tab-size: 4;
+    -moz-tab-size: 4;
+    text-align: left;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    padding: 0px;
+    margin: 0px;
+}
+
+.ql-container {
+    /*box-sizing: border-box;*/
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    /* height: 100%; */
+    margin: 0px;
+    position: relative;
+}
+
+#content {
+    /*this is here for some reasons but not used*/
+    min-height: 600px;
+    height: auto !important;
+    height: 600px;
+}
+
+header {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: oblique;
+    text-align: center;
+    padding: 20px;
+    color: lightcyan;
+    background-color: darkslategray;
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 200px 1fr 150px;
+    grid-template-rows: min-content 1fr min-content;
+}
+
+header {
+    grid-row: 1;
+    grid-column: 1 / 4;
+}
+
+.nav {
+    grid-row: 2;
+    grid-column: 1 / 2;
+    padding: 0 10px;
+    color: blanchedalmond;
+    background: linear-gradient(to bottom, #FF512F, #DD2476);
+}
+
+a.nav:link {
+    background-color: burlywood;
+}
+
+a.nav:visited {
+    background-color: mediumorchid;
+}
+
+a.nav:hover {
+    background-color: cornflowerblue;
+}
+
+main {
+    grid-row: 2;
+    grid-column: 2 / 3;
+    padding: 0 20px;
+}
+
+aside {
+    grid-row: 2;
+    grid-column: 3/ 4;
+    padding: 0 10px;
+    background-color: peru;
+    color: cornsilk;
+    background: linear-gradient(to bottom, #FF512F, #DD2476);
+}
+
+footer {
+    text-align: center;
+    grid-row: 3;
+    grid-column: 1 / 4;
+    background-color: darkslategray;
+}
+
+#share {
+    color: #DD2476;
+}
+
+#your {
+    color: crimson;
+}
+
+#post {
+    color: #FF512F;
+}
+
+#svg {
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.form {
+    text-align: center;
+    margin: 10px;
+}
