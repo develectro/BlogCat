@@ -75,6 +75,8 @@ body {
 }
 
 header {
+    margin: 0px;
+    padding: 3px;
     grid-row: 1;
     grid-column: 1 / 4;
 }
@@ -123,14 +125,20 @@ footer {
 
 #share {
     color: #DD2476;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 #your {
     color: crimson;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 #post {
     color: #FF512F;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 #svg {
@@ -143,4 +151,9 @@ footer {
 .form {
     text-align: center;
     margin: 10px;
+}
+
+img {
+    height: 50px;
+    width: 50px;
 }
