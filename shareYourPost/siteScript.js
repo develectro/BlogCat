@@ -16,6 +16,5 @@ var editor = new Quill('.editor', options);
 
 document.getElementById('subButton').addEventListener('click', clicked => {
     var dataWithDeltaFormat = quill.getContetnts();
-    console.log(dataWithDeltaFormat);
-    alert("hello");
+    var myCookie = document.cookie = dataWithDeltaFormat;
 });
