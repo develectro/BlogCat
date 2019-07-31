@@ -30,16 +30,18 @@
             var text = "hello, this is a primitive string variable ";
             var textJSON = JSON.stringify(text);
             var decodedText;
+            var paragraph;
             var ajax = XMLHttpRequest();
-            this.onreadystatechange = function() {
+            ajax.open('GET', 'db.php', true);
+            ajax.send(textJSON);
+            ajax.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
                     //response
                     decodedText = JSON.parse(textJSON);
-                    document.getElementById('pTag').innerHTML = decodedText;
+                    paragraph = document.getElementById('pTag');
+                    paragraph.innerHTML = decodedText;
                 }
             }
-            ajax.open('GET', 'db.php', true);
-            ajax.send(textJSON);
         </script>
     </body>
 
