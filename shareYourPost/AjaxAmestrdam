@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+    <head>
+        <title>Ajax Request and Response</title>
+        <meta charset="utf-8">
+        <style type="text/css">
+            body {
+                background: linear-gradient(to bottom, #15e626, rgb(191, 255, 14));
+            }
+            
+            div {
+                display: inline;
+            }
+            
+            input {
+                background-color: #15e626;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <p id="pTag">text will be shown here</p>
+            <form action="">
+                <input type="submit" value="SendMessgae" />
+            </form>
+        </div>
+        <script type="text/javascript">
+            var text = "hello, this is a primitive string variable ";
+            var textJSON = JSON.stringify(text);
+            var decodedText;
+            var ajax = XMLHttpRequest();
+            this.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    //response
+                    decodedText = JSON.parse(textJSON);
+                    document.getElementById('pTag').innerHTML = decodedText;
+                }
+            }
+            ajax.open('GET', 'db.php', true);
+            ajax.send(textJSON);
+        </script>
+    </body>
+
+</html>
