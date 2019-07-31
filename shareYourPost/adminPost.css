@@ -26,6 +26,7 @@ body {
 }
 
 .ql-editor {
+    color: indigo;
     width: 399px;
     height: 250px;
     background-color: azure;
